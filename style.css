@@ -4,17 +4,15 @@ body, html {
     margin: 0;
 }
 
-/* Use Flexbox to center the .centered-window div */
-body {
-    display: flex;
-    justify-content: center;  /* Center horizontally */
-    align-items: center;      /* Center vertically */
-
-}/* Style the centered window */
+/* Style the centered window */
 .centered-window {
     background-color: red;
     border: 2px solid #ccc;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     text-align: center;
+
+    display: flex;
+    justify-content: center;  /* Center horizontally */
+    align-items: center;      /* Center vertically */
 }
