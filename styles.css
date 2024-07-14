@@ -33,20 +33,40 @@ main {
 }
 
 .glossy-button {
-    background: linear-gradient(to bottom, #0f9b0f, #00ff00); /* Green gradient */
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(to bottom, #66ff66, #009900); /* Green gradient */
+    border: 1px solid #006600;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3), inset 0 -4px 10px rgba(0, 0, 0, 0.3), inset 0 4px 10px rgba(255, 255, 255, 0.2);
     color: white;
     cursor: pointer;
     font-size: 1.2em;
     margin: 10px;
-    padding: 10px 20px;
+    padding: 15px 30px;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     transition: background 0.3s, transform 0.3s;
+    position: relative;
+}
+
+.glossy-button:before {
+    content: '';
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 40%;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+    transform: translateY(-50%);
 }
 
 .glossy-button:hover {
-    background: linear-gradient(to bottom, #00ff00, #0f9b0f);
+    background: linear-gradient(to bottom, #009900, #66ff66);
     transform: scale(1.05);
+}
+
+.glossy-button:active {
+    background: linear-gradient(to bottom, #005500, #00aa00);
+    box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.5), 0 2px 5px rgba(0, 0, 0, 0.3);
+    transform: scale(1.02);
 }
