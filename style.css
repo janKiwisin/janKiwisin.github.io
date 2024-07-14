@@ -1,4 +1,16 @@
-/* Style the centered window */
+/* Ensure the body takes up the full screen height and has no margin */
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+/* Use Flexbox to center the .centered-window div */
+body {
+    display: flex;
+    justify-content: center;  /* Center horizontally */
+    align-items: center;      /* Center vertically */
+    
+}/* Style the centered window */
 .centered-window {
     background-color: white;
     border: 2px solid #ccc;
