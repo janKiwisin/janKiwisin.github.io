@@ -111,6 +111,11 @@ main {
     --button-hue-end: #cc0000;
 }
 
+.hue-purple {
+    --button-hue-start: #cc00ff;
+    --button-hue-end: #8d00b0;
+}
+
 /* This is for when you're already on the page from the button */
 .on-page {
     box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.8); /* Slightly darker shadow */
