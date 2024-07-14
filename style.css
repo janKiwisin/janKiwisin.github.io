@@ -9,10 +9,10 @@ body {
     display: flex;
     justify-content: center;  /* Center horizontally */
     align-items: center;      /* Center vertically */
-    
+
 }/* Style the centered window */
 .centered-window {
-    background-color: white;
+    background-color: red;
     border: 2px solid #ccc;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
