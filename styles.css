@@ -61,7 +61,6 @@ main {
 }
 
 .glossy-button:hover {
-    background: linear-gradient(to bottom, #009900, #66ff66);
     transform: scale(1.05);
 }
 
