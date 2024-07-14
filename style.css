@@ -1,0 +1,8 @@
+/* Style the centered window */
+.centered-window {
+    background-color: white;
+    border: 2px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
