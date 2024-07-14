@@ -11,8 +11,27 @@ body {
     padding: 0;
 }
 
-header, footer {
+header {
     background: rgba(255, 255, 255, 0.687);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: left; /* Center the images */
+    gap: 10px; /* Adjust spacing between images */
+}
+
+header img {
+    display: inline-block;
+    vertical-align: top;
+    height: 64px; /* Set a consistent height */
+    width: auto; /* Maintain aspect ratio */
+    margin: 0 3px; /* Adjust spacing between images */
+}
+
+footer {
+    background: rgba(255, 255, 255, 0.2);
     border-bottom: 2px solid rgba(255, 255, 255, 0.3);
     padding: 20px;
     text-align: center;
@@ -37,6 +56,7 @@ main {
     padding: 20px;
 }
 
+/* Glossy buttons */
 .glossy-button {
     background: linear-gradient(to bottom, var(--button-hue-start), var(--button-hue-end)); /* Gradient using custom properties */
     border: 1px solid #006600;
@@ -88,4 +108,11 @@ main {
 .hue-red {
     --button-hue-start: #ff6666;
     --button-hue-end: #cc0000;
+}
+
+/* This is for when you're already on the page from the button */
+.on-page {
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.8); /* Slightly darker shadow */
+    transform: scale(1.02);
+    color: yellow
 }
