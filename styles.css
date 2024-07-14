@@ -55,7 +55,7 @@ main {
 .glossy-button:before {
     content: '';
     position: absolute;
-    top: 15%; /* Adjust this value to move the highlight down */
+    top: 30; /* Adjust this value to move the highlight down */
     left: 5%;
     width: 90%;
     height: 40%;
