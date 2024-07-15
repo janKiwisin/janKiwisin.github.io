@@ -168,6 +168,10 @@ main {
         max-height: 40px;
     }
 
+    .logo-title {
+        max-width: 100vw;
+    }
+
     .glossy-button {
         font-size: 1em; /* Reduce font size */
         padding: 10px 20px; /* Reduce padding */
