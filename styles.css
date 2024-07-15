@@ -102,6 +102,13 @@ main {
     transform: scale(1.02);
 }
 
+.scrollable-buttons {
+    display: flex;
+    overflow-x:unset;
+    white-space: nowrap; /* Prevent line breaks */
+    justify-content: center; /* Center the buttons */
+}
+
 /* Hue Subclasses */
 .hue-green {
     --button-hue-start: #66ff66;
@@ -131,7 +138,7 @@ main {
 }
 
 /* Media Query for Mobile Devices */
-@media (max-width: 600px) {
+@media (max-width: 850px) {
     .header-content {
         flex-direction: column; /* Stack items vertically */
     }
