@@ -1,20 +1,36 @@
 :root {
     --button-hue-start: #66ff66;
     --button-hue-end: #009900;
+
+    --button-gloss: rgba(255, 255, 255, 0.4);
+
+    --body-hue-start: #00b4db;
+    --body-hue-end: #0083b0;
+
+    --hf-hue: rgba(255, 255, 255, 0.687);
+
+    --text-hue: white;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(to bottom, #00b4db, #0083b0); /* Blue gradient background */
+    background: linear-gradient(to bottom, var(--body-hue-start), var(--body-hue-end)); /* Blue gradient background */
     background-attachment: fixed;
-    color: white;
+    color: var(--text-hue);
     margin: 0;
     padding: 0;
     height: 100vh;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 }
 
 header {
-    background: rgba(255, 255, 255, 0.687);
+    background: var(--hf-hue);
     border-bottom: 2px solid rgba(255, 255, 255, 0.3);
     padding: 20px;
     text-align: center;
@@ -39,8 +55,9 @@ header img {
 }
 
 footer {
-    background: rgba(255, 255, 255, 0.2);
+    background: var(--hf-hue);
     border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    color: black;
     padding: 20px;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -81,10 +98,18 @@ main {
     border: 0;
 }
 
+td button {
+    height: 450px;
+}
+
+td button div {
+    height:100%;
+}
+
 /* Glossy buttons */
 .glossy-button {
     background: linear-gradient(to bottom, var(--button-hue-start), var(--button-hue-end)); /* Gradient using custom properties */
-    border: 1px solid #006600;
+    border: 0px solid #000000;
     border-radius: 15px;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3), inset 0 -4px 10px rgba(0, 0, 0, 0.3), inset 0 4px 10px rgba(255, 255, 255, 0.2);
     color: white;
@@ -104,9 +129,9 @@ main {
     left: 5%;
     width: 90%;
     height: 40%;
-    background: rgba(255, 255, 255, 0.4);
+    background: var(--button-gloss);
     border-radius: 10px 10px 0 0;
-    box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 8px var(--button-gloss);
     transform: translateY(-50%);
 }
 
@@ -126,6 +151,10 @@ main {
     justify-content: center; /* Center the buttons */
 }
 
+.no-gloss {
+    --button-gloss: rgba(255, 255, 255, 0);
+}
+
 /* Hue Subclasses */
 .hue-green {
     --button-hue-start: #66ff66;
@@ -142,9 +171,24 @@ main {
     --button-hue-end: #cc0000;
 }
 
+.hue-orange {
+    --button-hue-start: #FABD00;
+    --button-hue-end: #b88a00;
+}
+
 .hue-purple {
     --button-hue-start: #cc00ff;
     --button-hue-end: #8d00b0;
+}
+
+.hue-spain-body {
+    --body-hue-start: #FABD00;
+    --body-hue-end: #b88a00;
+    --text-hue: black;
+}
+
+.hue-spain-hf {
+    --hf-hue: rgb(170, 21, 26);
 }
 
 /* This is for when you're already on the page from the button */
