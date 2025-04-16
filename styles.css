@@ -73,6 +73,11 @@ main {
     text-align: center;
 }
 
+br {
+    display: block;
+    margin-bottom: 1em; /* ajusta el espaciado */
+}
+
 .content {
     background: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
@@ -104,6 +109,10 @@ td button {
 
 td button div {
     height:100%;
+}
+
+.index button {
+    width: 80%;
 }
 
 /* Glossy buttons */
@@ -189,6 +198,78 @@ td button div {
 
 .hue-spain-hf {
     --hf-hue: rgb(170, 21, 26);
+}
+
+.hue-green-body {
+    --body-hue-start: #00FF00;
+    --body-hue-end: #00a100;
+}
+
+.hue-green-hf {
+    --hf-hue: #00FF00;
+}
+
+.hue-red-body {
+    --body-hue-start: #c22121;
+    --body-hue-end: #a10000;
+}
+
+.hue-red-hf {
+    --hf-hue: #c22121;
+}
+
+.hue-blue-body {
+    --body-hue-start: #4444ff;
+    --body-hue-end: #2525a3;
+}
+
+.hue-blue-hf {
+    --hf-hue: #4444ff;
+}
+
+.hue-purple-body {
+    --body-hue-start: #800080;
+    --body-hue-end: #4b004b;
+}
+
+.hue-purple-hf {
+    --hf-hue: #800080;
+}
+
+.hue-orange-body {
+    --body-hue-start: #FFA500;
+    --body-hue-end: #cc8400;
+}
+
+.hue-orange-hf {
+    --hf-hue: #FFA500;
+}
+
+.hue-pink-body {
+    --body-hue-start: #FF69B4;
+    --body-hue-end: #c05090;
+}
+
+.hue-pink-hf {
+    --hf-hue: #FF69B4;
+}
+
+.hue-yellow-body {
+    --body-hue-start: #FFFF00;
+    --body-hue-end: #a1a100;
+}
+
+.hue-yellow-hf {
+    --hf-hue: #FFFF00;
+}
+
+.hue-cyan-body {
+    --body-hue-start: #00FFFF;
+    --body-hue-end: #00a1a1;
+}
+
+.hue-cyan-hf {
+    --hf-hue: #00FFFF;
 }
 
 /* This is for when you're already on the page from the button */
